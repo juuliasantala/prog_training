@@ -1,15 +1,17 @@
 # Hands-on material for session 1
 Three smaller exercises with examples and the mission.
 
-## Small exercise 1
+## Small exercises
+
+### Exercise 1
 
 TBD
 
-## Small exercise 2
+### Exercise 2
 
 TBD
 
-## Small exercise 3
+### Exercise 3
 
 TBD
 
