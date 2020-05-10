@@ -4,7 +4,7 @@ Hands-on exercises for the training sessions delivered over Cisco Webex.
 ## Setting up your environment
 
 What do I need for the exercises?
-1. DevNet account (get on at developer.cisco.com)
+1. DevNet account (get one at developer.cisco.com)
 2. Python 3 installed on your laptop
 3. Git to clone code from github
 4. Code editor (for example Atom)
