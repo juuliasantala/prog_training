@@ -1,6 +1,12 @@
 # Cisco Programmability training material
 Hands-on exercises for the training sessions delivered over Cisco Webex.
 
+## Hands-on exercises for each session
+To be completed after before the next session.
+- [Session 1](./1) - Available!
+- [Session 2](./2)
+- [Session 3](./3)v
+
 ## Setting up your environment
 
 What do I need for the exercises?
@@ -15,12 +21,6 @@ If unsure, use the DevNet Learning labs to help install Python, git and code edi
 
 For our sessions it is enough to go through steps 1-5.
 There is more in the guide than what we need for now. No need for Node or things that are under steps 6 and 7.
-
-## Hands-on exercises for each session
-To be completed after before the next session.
-- [Session 1](./1)
-- [Session 2](./2)
-- [Session 3](./3)
 
 ## Author and further information
 Juulia Santala, jusantal@cisco.com
