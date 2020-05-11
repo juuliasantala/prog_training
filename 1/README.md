@@ -12,7 +12,7 @@ Finally, last part is the start of the mission, that we will continue working on
   - DevNet: [Intro to Python part 1](https://developer.cisco.com/learning/modules/programming-fundamentals/intro-python-part1/step/1)
 
 **Exercises**
-- Exercise 1
+- [Exercise 1](#exercise-1)
 - Exercise 2
 - Exercise 3
 - Mission 1/3
