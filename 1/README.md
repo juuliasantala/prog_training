@@ -52,7 +52,7 @@ The third variable is 3.5 and the type is <class 'float'>
 
 ### Exercise 2
 
-Try out the conditionals. We will cover them in the session 2, but it is good to try out them already now!
+Try out the conditionals. 
 Create a script where you first ask user for a number, and provided is 10, the script prints out a congratulation message for the user. If the number is not 10, the script tells the user that they guessed the wrong number.
 
 Example output:
