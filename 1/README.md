@@ -13,9 +13,9 @@ Finally, last part is the start of the mission, that we will continue working on
 
 **Exercises**
 - [Exercise 1](#exercise-1)
-- Exercise 2
-- Exercise 3
-- Mission 1/3
+- [Exercise 2](#exercise-2)
+- [Exercise 3](#exercise-3)
+- [Mission 1/3](#mission)
 
 
 ## Small exercises
