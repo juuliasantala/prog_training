@@ -2,10 +2,11 @@
 Hands-on exercises for the training sessions delivered over Cisco Webex.
 
 ## Hands-on exercises for each session
-To be completed after before the next session.
 - [Session 1](./1) - Available!
 - [Session 2](./2)
-- [Session 3](./3)v
+- [Session 3](./3)
+
+---
 
 ## Setting up your environment
 
