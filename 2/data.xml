@@ -1,0 +1,20 @@
+<rpc-reply xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="101">
+  <data>
+    <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+      <interface>
+        <Vlan>
+          <name>1</name>
+        </Vlan>
+        <Vlan>
+          <name>10</name>
+        </Vlan>
+        <Vlan>
+          <name>20</name>
+        </Vlan>
+        <Vlan>
+          <name>30</name>
+        </Vlan>
+      </interface>
+    </native>
+  </data>
+</rpc-reply>

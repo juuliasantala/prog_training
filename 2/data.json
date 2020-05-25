@@ -1,0 +1,31 @@
+{
+    "response": {
+        "sites": [
+            {
+                "id": "2a77ddbb-42f2-4b90-8b43-338ac9188570",
+                "name": "Bldg-20",
+                "parentId": "42ecdc06-d03c-4aeb-9542-28c511d1540e",
+                "latitude": "37.413165",
+                "longitude": "-121.915801",
+                "locationType": "building",
+                "locationAddress": "720 Alder Drive, Milpitas, California 95035, United States",
+                "locationCountry": "United States",
+                "displayName": "231237",
+                "groupNameHierarchy": "Global/San Jose/Bldg-20"
+            },
+            {
+                "id": "42ecdc06-d03c-4aeb-9542-28c511d1540e",
+                "name": "San Jose",
+                "parentId": "7b56c272-4ccd-4187-8820-b7b66fdce4be",
+                "latitude": "",
+                "longitude": "",
+                "locationType": "area",
+                "locationAddress": "",
+                "locationCountry": "",
+                "displayName": "231236",
+                "groupNameHierarchy": "Global/San Jose"
+            }
+        ]
+    },
+    "version": "1.0"
+}
