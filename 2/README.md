@@ -133,9 +133,9 @@ import json, xmltodict
 Try out REST APIs. This is important, as we will go directly to the use of the REST APIs in the lesson 3, and not cover the basics. After studying the DevNet material for REST APIs defined in the beginning of this document, download Postman to try out APIs. You can also use cURL, but we will be using Postman during the Session 3. Both are important tools to understand, but for now we focus on Postman.
 
 Check the documentation and try out in Postman based on what you learned from the DevNet Learning Labs. No authentication needed.
-Countries: http://restcountries.eu/
-NumbersAPI: http://numbersapi.com/
-Chuck Norris API: https://api.chucknorris.io/
+- Countries: http://restcountries.eu/
+- NumbersAPI: http://numbersapi.com/
+- Chuck Norris API: https://api.chucknorris.io/
 
 You can also check the DevNet Sandboxes and try out APIs, these require authentication. Always-on labs have authentication information ready, reservable labs’ are available through VPN once reserved.
 
