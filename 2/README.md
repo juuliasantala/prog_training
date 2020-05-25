@@ -1,5 +1,5 @@
 # Hands-on material for session 2
-Smaller exercises with examples and the mission. Details will be defined closer to session 2.
+Smaller exercises with examples and the mission. **Solution files for exercises to be added soon!**
 
 **Reading material:**
 - [Optional] Recap info covered in the session 2:
@@ -10,11 +10,13 @@ Smaller exercises with examples and the mission. Details will be defined closer 
   - DevNet: [What is REST? What are REST APIs?](https://developer.cisco.com/learning/devnet-express/dnav4-track/rest-api-fundamentals/what-are-rest-apis/step/1)
   - DevNet: [Getting started with REST APIs](https://developer.cisco.com/learning/devnet-express/dnav4-track/rest-api-fundamentals/getting-started-rest-apis/step/1)
   - Install Postman: https://www.postman.com/downloads/
+  - Play with REST APIs ([Exercise 4](#exercise-4))
   
 **Exercises**
 - [Exercise 1](#exercise-1)
 - [Exercise 2](#exercise-2)
 - [Exercise 3](#exercise-3)
+- [Exercise 4](#exercise-4)
 - [Mission 2/3](#mission-23)
 
 ## Small exercises
@@ -38,13 +40,96 @@ You need to create the virtual environment only once, after that you just use so
 
 ### Exercise 1
 
-TBD
+Try loops and conditionals! Create a list with different numbers. Print the list, and then loop through the list:
+- if number is over than 10, print something like "The number is over 10!"
+- if number is exactly 10, print something like "The number is 10!"
+- if number is less than 10, print something like "Small number!"
+
+Example output:
+```
+$ python netmiko_test.py
+My list is [1, 5, 3, 7, 10, 11, 45, 2, 14]
+Small number!
+Small number!
+Small number!
+Small number!
+The number is 10!
+The number is over 10!
+The number is over 10!
+Small number!
+The number is over 10!
+```
 
 ### Exercise 2
 
-TBD
+Check how to research, install and import a module with the module Netmiko.
+1. Check the documentation: https://github.com/ktbyers/netmiko
+2. Install Netmiko in your virtual environment
+3. Import Netmiko connect handler in a python script as shown in the documentation
+4. Add the info of the device you want to connect to, check the example in the documentation. For example, if you want to connect to the DevNet always on CSR1000 router, use the following credentials: Device type: cisco_xe, Host: ios-xe-mgmt-latest.cisco.com, SSH Port: 8181, Username: developer, Password and secret: C1sco12345
+5. Create the connection with ConnectHandler (see the documentation)
+6. Run some show commands with send_command method, such as "show ip int brief"
+7. Print the response on CLI
+8. Make file safer by taking the credentials to another python file, and importing that file to your script. Instead of host, username and password text, you can now use variables that point to your credentials file.
+
+Example output:
+```
+$ python netmiko_test.py
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet1       10.10.20.48     YES NVRAM  up                    up
+GigabitEthernet2       20.20.20.254    YES manual up                    up
+GigabitEthernet3       30.30.30.254    YES manual up                    up
+Loopback21             10.0.0.21       YES manual up                    up
+Loopback22             1.1.1.22        YES manual up                    up
+Loopback23             19.19.19.19     YES manual up                    up
+Loopback24             unassigned      YES unset  up                    up
+Loopback25             unassigned      YES unset  up                    up
+Loopback26             unassigned      YES unset  up                    up
+Loopback27             unassigned      YES unset  up                    up
+Loopback28             unassigned      YES unset  up                    up
+Loopback29             unassigned      YES unset  up                    up
+Loopback30             unassigned      YES unset  up                    up
+Loopback31             unassigned      YES unset  up                    up
+Loopback32             unassigned      YES unset  up                    up
+Loopback33             unassigned      YES unset  up                    up
+Loopback34             unassigned      YES unset  up                    up
+Loopback35             unassigned      YES unset  up                    up
+Loopback37             unassigned      YES unset  up                    up
+Loopback38             unassigned      YES unset  up                    up
+Loopback39             unassigned      YES unset  up                    up
+Loopback40             unassigned      YES unset  up                    up
+Loopback41             unassigned      YES unset  up                    up
+Loopback42             unassigned      YES unset  up                    up
+Loopback108            unassigned      YES unset  up                    up
+```
 
 ### Exercise 3
+See the mission_response.xml file? Write a script where you first open this file, create a dictionary out of the information, and print out the different interfaces.
+
+**Example output:**
+```
+$ python xml_information.py
+1/0/1
+1/0/2
+1/0/3
+1/0/4
+1/0/5
+1/0/6
+1/0/7
+1/0/8
+```
+
+**Tip:** You can use the following to change the XML to easier readable dictionary:
+```Python
+data = json.loads(json.dumps(xmltodict.parse(string)))
+```
+
+Remember to import both json and xmltodict
+```Python
+import json, xmltodict
+```
+
+### Exercise 4
 Try out REST APIs. This is important, as we will go directly to the use of the REST APIs in the lesson 3, and not cover the basics. After studying the DevNet material for REST APIs defined in the beginning of this document, download Postman to try out APIs. You can also use cURL, but we will be using Postman during the Session 3. Both are important tools to understand, but for now we focus on Postman.
 
 Check the documentation and try out in Postman based on what you learned from the DevNet Learning Labs. No authentication needed.
@@ -62,7 +147,7 @@ In the mission 1/3 we started creating a simple app which changes a single inter
 Remember: Don't try to create the whole application on one go, rather create some of the parts, test it by running the it, and then add more.
 
 1. First, create a function that reads the information from mission_response.json file (you can find this file from this github page) and returns the JSON text. Check that the function works for example by printing the outcome.
-2. Create a function for parsing the JSON. Use the JSON text gotten from the function created in the previous step. From each  interface, save name, vlan, and port status into a list. You can for example create a list, and add dictionaries for each interface (see example below) in a loop. Try first just looping through the interfaces to see that the loop works. Return the final list, so it can be used outside of the function.
+2. Create a function for parsing the JSON (remember to import the module). Use the JSON text gotten from the function created in the previous step. From each  interface, save name, vlan, and port status into a list. You can for example create a list, and add dictionaries for each interface (see example below) in a loop. Try first just looping through the interfaces to see that the loop works. Return the final list, so it can be used outside of the function.
 3. [OPTIONAL] I mentioned that we would want to focus only on the access ports (Gigabit). How would you create a conditional that would take only Gigabit ports into account and skip others? What about the VLAN interface, how would you leave that out?
 4. Last time, we created a string to print out the status and VLAN of the interface. Print out to the user the information of the interfaces. Add a running number in front, so we can refer to that number when user chooses which interface they would like to configure.
 5. Ask from the user, which interface they would like to work with, and print the response. Remember! Index counting starts from 0, so if the user asks for first item in the list, the index is 0, not 1.
