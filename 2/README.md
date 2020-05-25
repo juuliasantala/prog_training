@@ -47,7 +47,7 @@ Try loops and conditionals! Create a list with different numbers. Print the list
 
 Example output:
 ```
-$ python netmiko_test.py
+$ python numbers.py
 My list is [1, 5, 3, 7, 10, 11, 45, 2, 14]
 Small number!
 Small number!
