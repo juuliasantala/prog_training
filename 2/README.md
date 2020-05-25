@@ -12,4 +12,4 @@ The idea of the mission is to build a simple, working application during the tra
 Details for the mission will be provided closer to session 2.
 
 ### Solution to mission 1
-TBD
+[Exercise 1](./mission1_solution.py)
