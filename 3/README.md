@@ -163,7 +163,7 @@ Remember: Don't try to create the whole application on one go, rather create som
 
 Place all the different functionalities in separate functions that you call from your main function.
 
-I personally reserved the "IOS XE on Catalyst 9000 16.12 EFT Code" sandbox from DevNet. If you cannot work on real equipment, I would recommend to reserve a sandbox. You can also try out the always on CSR1000v, but I would recommend to reserve instead so you have your own instance to work with.
+**I personally reserved the "IOS XE on Catalyst 9000 16.12 EFT Code" sandbox from DevNet for this exercise. If you cannot work on real equipment, I would recommend to reserve a sandbox.**
 --> [DevNet sandboxes](https://devnetsandbox.cisco.com/RM/Topology?c=14ec7ccf-2988-474e-a135-1e90b9bc6caf)
 
 1. First, create a function that creates a netconf connection to a switch and retrieves the interface information. Check that the function works for example by printing the outcome. The YANG models to be utilised are the Cisco native models "Cisco-IOS-XE-native" and "Cisco-IOS-XE-switch" (which extends the first model). Review for IOS XE 17.1.1 [here](https://github.com/YangModels/yang/blob/master/vendor/cisco/xe/1711/Cisco-IOS-XE-native.yang) and [here](https://github.com/YangModels/yang/blob/master/vendor/cisco/xe/1711/Cisco-IOS-XE-switch.yang). If you find challenging defining the filter, please see below.
