@@ -232,6 +232,11 @@ except KeyError:
     vlan = None
 ```
 
+How do I change information with Netconf? Create the connection like you would when getting information, but now instead of m.get_config you would use the following (note the config instead of filter):
+```Python
+m.edit_config(source="running", config=config)
+```
+
 ### Example output:
 ```
 $ python mission3.py
