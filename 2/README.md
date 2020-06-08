@@ -1,5 +1,5 @@
 # Hands-on material for session 2
-Smaller exercises with examples and the mission. **Solution files for exercises to be added soon!**
+Smaller exercises with examples and the mission.
 
 **Reading material:**
 - [Optional] Recap info covered in the session 2:
