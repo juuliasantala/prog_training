@@ -16,7 +16,6 @@ def get_json_data(json_file):
             vlan = interface["vlanId"]
             status = interface["status"]
             interface_list.append({"name":name, "vlan":vlan, "status":status})
-    print(interface_list)
     return interface_list
 
 def print_interface_vlan_and_status(interface_info):
