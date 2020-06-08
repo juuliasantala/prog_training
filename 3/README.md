@@ -39,7 +39,58 @@ You need to create the virtual environment only once, after that you just use so
 
 ### Exercise 1
 
-TBD
+Create an app that utilises the https://api.chucknorris.io/ Chuck Norris API you tried out in Postman!
+You can start by just creating a REST API call to retrieve a Chuck Norris joke. Once you got that working, make the program a little bit more complicated: Let the user decide which category they want to get the joke from. You can do this by getting the categories with an API, listing them for the user and asking their input, then using the selected category as an argument when getting the joke. Add also error handling with try-except, and a loop to let the user to get more than one joke if they so wish!
+
+### Example output:
+```
+$ python exercise1.py
+Welcome to the Chuck Norris joke application!
+Available categories:
+1. animal
+2. career
+3. celebrity
+4. dev
+5. explicit
+6. fashion
+7. food
+8. history
+9. money
+10. movie
+11. music
+12. political
+13. religion
+14. science
+15. sport
+16. travel
+Which category joke would you like to hear? Select a number! 6
+Here is your joke:
+Chuck Norris does not follow fashion trends, they follow him. But then he turns around and kicks their ass. Nobody follows Chuck Norris.
+Would you like to hear another joke? (yes/no) yes
+Welcome to the Chuck Norris joke application!
+Available categories:
+1. animal
+2. career
+3. celebrity
+4. dev
+5. explicit
+6. fashion
+7. food
+8. history
+9. money
+10. movie
+11. music
+12. political
+13. religion
+14. science
+15. sport
+16. travel
+Which category joke would you like to hear? Select a number! 4
+Here is your joke:
+Chuck Norris knows the last digit of PI.
+Would you like to hear another joke? (yes/no) no
+```
+
 
 ### Exercise 2
 
