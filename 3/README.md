@@ -17,7 +17,6 @@ Smaller exercises with examples and the mission.
 - [Exercise 1](#exercise-1)
 - [Exercise 2](#exercise-2)
 - [Exercise 3](#exercise-3)
-- [Exercise 4](#exercise-4)
 - [Mission 3/3](#mission-33)
 
 ## Small exercises
@@ -109,7 +108,7 @@ Start by getting the token, as you need that to authenticate yourself.
 Once you've got your token, get all the network devices. Once you have parsed the response from JSON to Python data structure, loop through the items and print the fammily and hostname of each of the returned devices on the screen.
 
 **TIP**
-By adding this in the beginning of your code, you can remoce the InsecyreRequestWarnings:
+By adding this in the beginning of your code, you can remove the InsecureRequestWarnings:
 ```Python
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
@@ -129,7 +128,7 @@ Family Switches and Hubs device with hostname cs3850.abc.inc
 ### Exercise 3
 
 Continue the previous exercise. DNA Center provides health information for network components.
-Now, save also the ID of the all the returned devices. Loop through all the devices and fecth their health information (overall, memory, CPU) wiht device-detail API.
+Now, save also the ID of the all the returned devices. Loop through all the devices and fecth their health information (overall, memory, CPU) with device-detail API.
 ```
 $ python exercise3.py
 asr1001-x.abc.inc has following health scores:
@@ -152,11 +151,6 @@ Overall health: 10
 Memory health: 10
 CPU health: 10
 ```
-
-
-### Exercise 4
-
-TBD
 
 
 ## Mission 3/3
