@@ -9,6 +9,7 @@ Smaller exercises with examples and the mission.
 
 - Self study, will not be covered in the session:
   - DevNet: [Exploring IOS XE YANG Data Models with RESTCONF](https://developer.cisco.com/learning/devnet-express/dnav4-track/dnav3-intro-mdp/dnav3-intro-restconf/step/1)
+  - DevNet: [Introduction to the Guest Shell](https://developer.cisco.com/learning/lab/intro-guestshell/step/1)
   - DevNet: [Introduction to On-Box Python](https://developer.cisco.com/learning/devnet-express/dnav4-track/dnav3-intro-guestshell/dnav3-intro-on-box-python/step/1)
   
 - If you didn't yet do it, familiarise yourself with error handling: https://realpython.com/python-exceptions/
