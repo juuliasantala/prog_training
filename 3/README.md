@@ -11,6 +11,8 @@ Smaller exercises with examples and the mission.
   - DevNet: [Exploring IOS XE YANG Data Models with RESTCONF](https://developer.cisco.com/learning/devnet-express/dnav4-track/dnav3-intro-mdp/dnav3-intro-restconf/step/1)
   - DevNet: [Introduction to On-Box Python](https://developer.cisco.com/learning/devnet-express/dnav4-track/dnav3-intro-guestshell/dnav3-intro-on-box-python/step/1)
   
+- If you didn't yet do it, familiarise yourself with error handling: https://realpython.com/python-exceptions/
+  
 **Exercises**
 - [Exercise 1](#exercise-1)
 - [Exercise 2](#exercise-2)
@@ -94,11 +96,63 @@ Would you like to hear another joke? (yes/no) no
 
 ### Exercise 2
 
-TBD
+Try out the DNA Center APIs! You can use the DevNet Sandbox always-on DNA Center, if you do not have access to a lab DNA Center.
+Sandbox credentials:
+```Python
+DNAC_ADDRESS = "sandboxdnac.cisco.com"
+DNAC_USER = "devnetuser"
+DNAC_PW = "Cisco123!"
+```
+
+Start by getting the token, as you need that to authenticate yourself.
+
+Once you've got your token, get all the network devices. Once you have parsed the response from JSON to Python data structure, loop through the items and print the fammily and hostname of each of the returned devices on the screen.
+
+**TIP**
+By adding this in the beginning of your code, you can remoce the InsecyreRequestWarnings:
+```Python
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+```
+
+
+### Example output:
+```
+$ python exercise2.py
+Family Routers device with hostname asr1001-x.abc.inc
+Family Switches and Hubs device with hostname cat_9k_1.abc.inc
+Family Switches and Hubs device with hostname cat_9k_2.abc.inc
+Family Switches and Hubs device with hostname cs3850.abc.inc
+```
+
 
 ### Exercise 3
 
-TBD
+Continue the previous exercise. DNA Center provides health information for network components.
+Now, save also the ID of the all the returned devices. Loop through all the devices and fecth their health information (overall, memory, CPU) wiht device-detail API.
+```
+$ python exercise3.py
+asr1001-x.abc.inc has following health scores:
+Overall health: 10
+Memory health: 10
+CPU health: 10
+
+cat_9k_1.abc.inc has following health scores:
+Overall health: 10
+Memory health: 10
+CPU health: 10
+
+cat_9k_2.abc.inc has following health scores:
+Overall health: 10
+Memory health: 10
+CPU health: 10
+
+cs3850.abc.inc has following health scores:
+Overall health: 10
+Memory health: 10
+CPU health: 10
+```
+
 
 ### Exercise 4
 
