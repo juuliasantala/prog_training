@@ -308,4 +308,7 @@ Thank you for using the application!
 [Mission 2/3](./mission2_solution.py)
 
 ### Solution to mission 3
-TBD
+The solution is combined from three files.
+Main: [Mission 3/3](./mission3_solution.py)
+Module for Netconf functionalities: [Netconf module](./mission3_netconf.py)
+Module for credentials, **fill here your credentials**: [Credentials](./netconf_credentials.py)
