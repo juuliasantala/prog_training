@@ -1,7 +1,5 @@
 # Hands-on material for session 1
-While going through the reading material from DevNet learninglabs marked for this session, try things out in the interactive python shell in terminal! Try out what happens when you change values. Then practice with the following exercises. For the practice exercises, try first to solve by yourself. If you get stuck or want to compare your code to an example solution code, check the solution files. Remember, these are just examples on how you could solve the exercises, there are different ways to do things!
-
-Finally, last part is the start of the mission, that we will continue working on after the two next sessions, building on what we start today.
+While going through the reading material from DevNet learninglabs marked for this session, try things out in the interactive python shell in terminal! Try out what happens when you change values. Then practice with the following exercises. For the practice exercises, try to solve those by yourself before the Q&A. The solution files will be added here after we have covered them in the Q&A session. Remember, the solutions are just examples on how you could solve the exercises, there are different ways to do things!
 
 **Reading material:**
 - Self-study, will not be covered in the lesson
@@ -15,14 +13,12 @@ Finally, last part is the start of the mission, that we will continue working on
 - [Exercise 1](#exercise-1)
 - [Exercise 2](#exercise-2)
 - [Exercise 3](#exercise-3)
-- [Mission 1/3](#mission-13)
+- [Exercise 4](#exercise-4)
 
 ---
+## Exercises
 
-## Small exercises
-
-You can work on the small exercises on either interactive python shell in terminal (python / py -i), or save them as python files and run them with python script.py / py script.py.
-It is recommended to start already now using the virtual environments, and never work outside of it. To create a virtual environment for session 1 exercises, you can do for example:
+You can try the excercises with interactice python shell in terminal (python / py -i), but I recommend you to save the final code as a Python file (run with python script.py / py script.py). Remember to activate the virtual environment, and never work outside of it. You can use the same environment through out the sessions, and activate it by using source together with the part to your environments "activate" functionality. Here is an example of creating a virtual environment and activating it:
 
 Mac:
 ```
@@ -109,11 +105,9 @@ number_as_a_number = int(number_as_a_string)
 
 ---
 
-## Mission 1/3
+# Exercise 4
 
-The idea of the mission is to build a simple, working application during the training. We will start with some simple features, and continue working on the code in the next session. An example solution for the Mission 1 will be provided later.
-
-Lets start by creating a simple application to change either the status or the VLAN of one interface. Don't try to create the whole application on one go, rather create some of the parts, test it by running the it, and then add more.
+Lets create a simple application to change either the status or the VLAN of one interface. Don't try to create the whole application on one go, rather create some of the parts, test it by running the it, and then add more.
 
 1. First, define three variables: one for the name of the interface (for example: "GigabitEthernet1/0/1"), one for the status (for example: "up"), and one for the VLAN (for example: "30").
 2. Print this information out to user, and ask them if they would want to change the status of the interface (user needs to type 1) or VLAN of the interface (user needs to type 2).
