@@ -118,7 +118,7 @@ Lets create a simple application to change either the status or the VLAN of one 
 
 Example output:
 ```
-$ python mission.py
+$ python exercise4.py
 The interface GigabitEthernet1/0/1 has status up and VLAN 20.
 Select 1 to change status and 2 to change VLAN: 2
 Which VLAN would you like to have? 30
