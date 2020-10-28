@@ -12,9 +12,7 @@ TBD
 - [Exercise 3](#exercise-3)
 - [Exercise 4](#exercise-4)
 
-## Small exercises
-You can work on the small exercises on either interactive python shell in terminal (python / py -i), or save them as python files and run them with python script.py / py script.py.
-Remember to activate the virtual environment, and never work outside of it. To create a virtual environment for session 3 exercises, you can do for example:
+You can try the excercises with interactice python shell in terminal (python / py -i), but I recommend you to save the final code as a Python file (run with python script.py / py script.py). Remember to activate the virtual environment, and never work outside of it. You can use the same environment through out the sessions, and activate it by using source together with the part to your environments "activate" functionality. Here is an example of creating a virtual environment and activating it:
 
 Mac:
 ```
