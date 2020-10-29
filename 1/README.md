@@ -18,20 +18,7 @@ While going through the reading material from DevNet learninglabs marked for thi
 ---
 ## Exercises
 
-You can try the excercises with interactice python shell in terminal (python / py -i), but I recommend you to save the final code as a Python file (run with python script.py / py script.py). Remember to activate the virtual environment, and never work outside of it. You can use the same environment through out the sessions, and activate it by using source together with the part to your environments "activate" functionality. Here is an example of creating a virtual environment and activating it:
-
-Mac:
-```
-$ python3 -m venv session1_exercises 
-$ source session1_exercises/bin/activate
-
-```
-Windows:
-```
-$ py -3 -m venv session1_exercises 
-$ source session1_exercises/Scripts/activate
-
-```
+You can try the excercises with interactice python shell in terminal (python / py -i), but I recommend you to save the final code as a Python file (run with python script.py / py script.py).
 
 
 ### Exercise 1
@@ -69,23 +56,12 @@ Congratulations, you chose the correct number!
 **Hints:**
 Using input returns a string. To be able to compare with the numbers, you need to change the datatype to int with int(). For example:
 ```python
-number_as_a_string = input("What is your favourite number?")
 number_as_a_number = int(number_as_a_string)
-```
-
-Note that when you assing a variable, you use "=", for example:
-```python
-number = 20
-```
-But when you compare if something is equal, you use "==", for example:
-```python
-if number == 20:
-    print("number is 20!")
 ```
 
 
 ### Exercise 3
-Create a simple calculator that takes two numbers as user input and returns a sum of these two numbers. The idea is that when the script is run in the terminal, the script will ask the user to provide first one number and then a second number, and use those two numbers for the calculation.
+Create a simple calculator that takes two numbers as user input and prints a sum of these two numbers. The idea is that when the script is run in the terminal, the script will ask the user to provide first one number and then a second number, and use those two numbers for the calculation.
 
 Example output:
 ```
@@ -99,13 +75,11 @@ The sum of numbers 24 and 13 is 37
 **Hint:**
 Using input returns a string. To be able to calculate with the numbers, you need to change the datatype to int with int(). For example:
 ```python
-number_as_a_string = input("What is your favourite number?")
 number_as_a_number = int(number_as_a_string)
 ```
 
----
 
-# Exercise 4
+### Exercise 4
 
 Lets create a simple application to change either the status or the VLAN of one interface. Don't try to create the whole application on one go, rather create some of the parts, test it by running the it, and then add more.
 
