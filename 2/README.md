@@ -119,7 +119,7 @@ There are quite a lot of things to work on here, so take them one at a time and 
 
 Example output:
 ```
-$ python exercise4.py
+$ python exercise3.py
 
 The interface GigabitEthernet1/0/1 has status up.
 The mode is access and VLAN 20.
