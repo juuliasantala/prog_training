@@ -97,7 +97,7 @@ Loopback108            unassigned      YES unset  up                    up
 
 ### Exercise 3
 
-We worked last week to create a simple application to change the status and vlan of an interface (session 1, [excercise 4](./1#exercise-1)). Lets optimise that code and add functionalities! Check the output to see what kind of things are expected, but also if you come up with some additional features, try them out as well :)
+We worked last week to create a simple application to change the status and vlan of an interface (session 1, excercise 4). Lets optimise that code and add functionalities! Check the output to see what kind of things are expected, but also if you come up with some additional features, try them out as well :)
 
 There are quite a lot of things to work on here, so take them one at a time and remember to test a lot before proceeding. The task's order is somewhat from easier to harder.
 
