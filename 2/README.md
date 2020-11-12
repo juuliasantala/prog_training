@@ -1,5 +1,5 @@
 # Hands-on material for session 2
-Exercises to be defined after the session 2.
+While going through the reading material from DevNet learninglabs marked for this session, try things out in the interactive python shell in terminal! Try out what happens when you change values. Then practice with the following exercises. For the practice exercises, try to solve those by yourself before the Q&A. The solution files will be added here after we have covered them in the Q&A session. Remember, the solutions are just examples on how you could solve the exercises, there are different ways to do things!
 
 **Reading material:**
 - Recap info covered in the session 2:
