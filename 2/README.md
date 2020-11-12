@@ -4,6 +4,7 @@ Exercises to be defined after the session 2.
 **Reading material:**
 - Recap info covered in the session 2:
   - DevNet: [Intro to Python part 2](https://developer.cisco.com/learning/devnet-express/dnav4-track/intro-python/intro-python-part2/step/1)
+  - check [Real Python's article](https://realpython.com/what-is-pip/) about PIP and modules for deeper understanding
   
 **Exercises**
 - [Exercise 1](#exercise-1)
