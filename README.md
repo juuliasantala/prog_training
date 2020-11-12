@@ -2,8 +2,8 @@
 Hands-on exercises for the training sessions delivered over Cisco Webex.
 
 ## Hands-on exercises for each session
-- [Session 1](./1) - Exercises avaiable!
-- [Session 2](./2) - Exercises partly available, rest will be added soon!
+- [Session 1](./1) - Exercises available!
+- [Session 2](./2) - Exercises available!
 - [Session 3](./3) - TBD after session
 - [Session 4](./4) - TBD after session
 
