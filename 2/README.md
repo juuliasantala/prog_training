@@ -55,10 +55,6 @@ The number is over 10!
 
 ### Exercise 2
 
-TBD
-
-### Exercise 3
-
 Check how to research, install and import a module with the module Netmiko.
 1. Check the documentation: https://github.com/ktbyers/netmiko
 2. Install Netmiko in your virtual environment
@@ -100,6 +96,11 @@ Loopback42             unassigned      YES unset  up                    up
 Loopback108            unassigned      YES unset  up                    up
 ```
 
+
+
+### Exercise 3
+
+TBD
 
 ### Exercise 4
 
