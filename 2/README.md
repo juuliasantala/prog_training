@@ -5,7 +5,11 @@ While going through the reading material from DevNet learninglabs marked for thi
 - Recap info covered in the session 2:
   - DevNet: [Intro to Python part 2](https://developer.cisco.com/learning/devnet-express/dnav4-track/intro-python/intro-python-part2/step/1)
   - check [Real Python's article](https://realpython.com/what-is-pip/) about PIP and modules for deeper understanding
-  
+
+  **Reading material added after Q&A session**
+  - check [Real Python's article](https://realpython.com/python-kwargs-and-args) about &#42;&#42;args and &#42;&#42;kwargs
+  - Want to understand better what Netmiko is under the hood? [Check this blog](https://oznetnerd.com/2020/05/04/learn-python-dissecting-netmiko-part-1/)
+
 **Exercises**
 - [Exercise 1](#exercise-1)
 - [Exercise 2](#exercise-2)
