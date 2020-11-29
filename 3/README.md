@@ -42,7 +42,7 @@ $ source session3_exercises/Scripts/activate
 
 You need to create the virtual environment only once, after that you just use source to activate it.
 
-### Postman exercise
+## Postman exercise
 
 Try out REST APIs. This is important, as we will go directly to the use of the REST APIs in the lesson 4, and not cover the basics. After studying the DevNet material for REST APIs defined in the beginning of this document, [download Postman](https://www.postman.com/downloads/) to try out APIs. You can also use cURL, but we will be using Postman during the Session 4. Both are important tools to understand, but for now we focus on Postman.
 
@@ -52,11 +52,11 @@ Play with APIs! Check the documentation and try out in Postman based on what you
 - NumbersAPI: http://numbersapi.com/
 - Chuck Norris API: https://api.chucknorris.io/
 
-### Exercise 1
+## Exercise 1
 
 Read the json_example2.json in your code, transform the content into Python data structure and print out all the interface names!
 
-### Example output:
+**Example output:**
 ```
 $ python exercise1.py
 FortyGigabitEthernet1/1/1
@@ -111,11 +111,11 @@ Vlan2045
 Vlan2508
 ```
 
-### Exercise 2
+## Exercise 2
 
 Read the json_example.json in your code. Create a "documentation" of what links the switch has towards the neighbors. Note that you will have to check the id of the source and target and match it with the nodes. Get creative and add more relevant info to your script!
 
-### Example output:
+**Example output:**
 ```
 $ python exercise2.py
 C9300-24T GigabitEthernet2/0/7 --> WS-C3850-48P-E GigabitEthernet1/0/7
@@ -124,7 +124,7 @@ C9300-24T GigabitEthernet2/0/3 --> WS-C3850-48P-E GigabitEthernet1/0/3
 C9300-24T GigabitEthernet2/0/5 --> WS-C3850-48P-E GigabitEthernet1/0/5
 ```
 
-### Exercise 3
+## Exercise 3
 
 Read the xml_example2.xml in your code. Print all the names of the interfaces!
 Note, when taking the xml-format into Python data structure with xmltodict, we got Ordered Dictionary instead of the normal dictionary. This data structure behaves like normal dictionary, the main difference is that it keeps the order in which the keys have been inserted.
