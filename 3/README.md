@@ -24,7 +24,6 @@ Additionally, we will not cover Netconf / Restconf in this course. However, afte
 - [Exercise 1](#exercise-1)
 - [Exercise 2](#exercise-2)
 - [Exercise 3](#exercise-3)
-- [Exercise 4](#exercise-4)
 
 Remember to activate the virtual environment, and never work outside of it. You can use the same environment through out the sessions, and activate it by using source together with the part to your environments "activate" functionality. Here is an example of creating a virtual environment and activating it:
 
@@ -127,8 +126,18 @@ C9300-24T GigabitEthernet2/0/5 --> WS-C3850-48P-E GigabitEthernet1/0/5
 
 ### Exercise 3
 
-XML EXERCISE TBD
+Read the xml_example2.xml in your code. Print all the names of the interfaces!
+Note, when taking the xml-format into Python data structure with xmltodict, we got Ordered Dictionary instead of the normal dictionary. This data structure behaves like normal dictionary, the main difference is that it keeps the order in which the keys have been inserted.
 
-## Exercise 4
-
-TBD
+**Example output:**
+```
+$ python exercise3.py
+1/0/1
+1/0/2
+1/0/3
+1/0/4
+1/0/5
+1/0/6
+1/0/7
+1/0/8
+```
