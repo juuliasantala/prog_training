@@ -45,7 +45,7 @@ You need to create the virtual environment only once, after that you just use so
 
 ### Postman exercise
 
-Try out REST APIs. This is important, as we will go directly to the use of the REST APIs in the lesson 3, and not cover the basics. After studying the DevNet material for REST APIs defined in the beginning of this document, [download Postman](https://www.postman.com/downloads/) to try out APIs. You can also use cURL, but we will be using Postman during the Session 4. Both are important tools to understand, but for now we focus on Postman.
+Try out REST APIs. This is important, as we will go directly to the use of the REST APIs in the lesson 4, and not cover the basics. After studying the DevNet material for REST APIs defined in the beginning of this document, [download Postman](https://www.postman.com/downloads/) to try out APIs. You can also use cURL, but we will be using Postman during the Session 4. Both are important tools to understand, but for now we focus on Postman.
 
 Play with APIs! Check the documentation and try out in Postman based on what you learned from the DevNet Learning Labs. Some examples of APIs that do not require authentication:
 - Deck of cards: https://deckofcardsapi.com/
@@ -55,15 +55,79 @@ Play with APIs! Check the documentation and try out in Postman based on what you
 
 ### Exercise 1
 
-TBD
+Read the json_example2.json in your code, transform the content into Python data structure and print out all the interface names!
+
+### Example output:
+```
+$ python exercise1.py
+FortyGigabitEthernet1/1/1
+FortyGigabitEthernet1/1/2
+GigabitEthernet0/0
+GigabitEthernet1/0/1
+GigabitEthernet1/0/10
+GigabitEthernet1/0/11
+GigabitEthernet1/0/12
+GigabitEthernet1/0/13
+GigabitEthernet1/0/14
+GigabitEthernet1/0/15
+GigabitEthernet1/0/16
+GigabitEthernet1/0/17
+GigabitEthernet1/0/18
+GigabitEthernet1/0/19
+GigabitEthernet1/0/2
+GigabitEthernet1/0/20
+GigabitEthernet1/0/21
+GigabitEthernet1/0/22
+GigabitEthernet1/0/23
+GigabitEthernet1/0/24
+GigabitEthernet1/0/3
+GigabitEthernet1/0/4
+GigabitEthernet1/0/5
+GigabitEthernet1/0/6
+GigabitEthernet1/0/7
+GigabitEthernet1/0/8
+GigabitEthernet1/0/9
+GigabitEthernet1/1/1
+GigabitEthernet1/1/2
+GigabitEthernet1/1/3
+GigabitEthernet1/1/4
+LISP0
+Loopback0
+TenGigabitEthernet1/1/1
+TenGigabitEthernet1/1/2
+TenGigabitEthernet1/1/3
+TenGigabitEthernet1/1/4
+TenGigabitEthernet1/1/5
+TenGigabitEthernet1/1/6
+TenGigabitEthernet1/1/7
+TenGigabitEthernet1/1/8
+TwentyFiveGigE1/1/1
+TwentyFiveGigE1/1/2
+Vlan1
+Vlan1021
+Vlan1023
+Vlan1024
+Vlan1025
+Vlan2045
+Vlan2508
+```
 
 ### Exercise 2
 
-TBD
+Read the json_example.json in your code. Create a "documentation" of what links the switch has towards the neighbors. Note that you will have to check the id of the source and target and match it with the nodes. Get creative and add more relevant info to your script!
+
+### Example output:
+```
+$ python exercise2.py
+C9300-24T GigabitEthernet2/0/7 --> WS-C3850-48P-E GigabitEthernet1/0/7
+C9300-24T TenGigabitEthernet2/1/2 --> C9500-40X TenGigabitEthernet1/0/40
+C9300-24T GigabitEthernet2/0/3 --> WS-C3850-48P-E GigabitEthernet1/0/3
+C9300-24T GigabitEthernet2/0/5 --> WS-C3850-48P-E GigabitEthernet1/0/5
+```
 
 ### Exercise 3
 
-TBD
+XML EXERCISE TBD
 
 ## Exercise 4
 
