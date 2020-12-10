@@ -1,6 +1,10 @@
 import requests
 import pprint
 
+#Do disable warnings about not verifying SSL certificate 
+from requests.packages.urllib3.exceptions import InsecureRequestWarning
+requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
+
 DNAC_ADDRESS = "sandboxdnac.cisco.com"
 DNAC_USER = "devnetuser"
 DNAC_PW = "Cisco123!"

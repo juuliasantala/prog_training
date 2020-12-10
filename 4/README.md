@@ -87,6 +87,8 @@ Start by getting the token, as you need that to authenticate yourself.
 
 Once you've got your token, get all the network devices. Once you have parsed the response from JSON to Python data structure, loop through the items and print the fammily and hostname of each of the returned devices on the screen.
 
+Check the [DNA Center API documentation](https://developer.cisco.com/docs/dna-center/api/1-3-3-x/) to find the correct API to use for getting token and network devices.
+
 **TIP**
 Requests can ignore verifying the SSL certificate if you set verify to False (check the [example file]( ./rest_dnac_example.py)). This will however throw you a warning everytime you do the API call. By adding the following in the beginning of your code, you can remove the InsecureRequestWarnings:
 ```Python
@@ -105,8 +107,70 @@ Family Switches and Hubs device with hostname cs3850.abc.inc
 
 ### Exercise 3
 
-TBD
+Continue working with DNA Center APIs. We have been successful in getting all of the network devices in the previous exercise. Now utilise this information, and get all the interfaces of the device that the user selects!
 
-## Exercise 4
+Check the [DNA Center API documentation](https://developer.cisco.com/docs/dna-center/api/1-3-3-x/) to find the correct API to use for getting interface info by device id.
+
+**Example output:**
+```
+$ python exercise3.py
+The switches in the network:
+1. C9300-24UX (cat_9k_1)
+2. C9300-24UX (cat_9k_2)
+
+Select number from which you would like to know the port utilisation (number or end): 2
+
+Interfaces of cat_9k_2:
+
+FortyGigabitEthernet1/1/1: down
+FortyGigabitEthernet1/1/2: down
+GigabitEthernet1/1/1: down
+GigabitEthernet1/1/2: down
+GigabitEthernet1/1/3: down
+GigabitEthernet1/1/4: down
+TenGigabitEthernet1/0/1: down
+TenGigabitEthernet1/0/2: down
+TenGigabitEthernet1/0/3: down
+TenGigabitEthernet1/0/4: down
+TenGigabitEthernet1/0/5: down
+TenGigabitEthernet1/0/6: down
+TenGigabitEthernet1/0/7: down
+TenGigabitEthernet1/0/8: down
+TenGigabitEthernet1/0/9: down
+TenGigabitEthernet1/0/10: down
+TenGigabitEthernet1/0/11: down
+TenGigabitEthernet1/0/12: down
+TenGigabitEthernet1/0/13: down
+TenGigabitEthernet1/0/14: down
+TenGigabitEthernet1/0/15: down
+TenGigabitEthernet1/0/16: down
+TenGigabitEthernet1/0/17: down
+TenGigabitEthernet1/0/18: down
+TenGigabitEthernet1/0/19: down
+TenGigabitEthernet1/0/20: down
+TenGigabitEthernet1/0/21: down
+TenGigabitEthernet1/0/22: down
+TenGigabitEthernet1/0/23: down
+TenGigabitEthernet1/0/24: up
+TenGigabitEthernet1/1/1: up
+TenGigabitEthernet1/1/2: down
+TenGigabitEthernet1/1/3: down
+TenGigabitEthernet1/1/4: down
+TenGigabitEthernet1/1/5: down
+TenGigabitEthernet1/1/6: down
+TenGigabitEthernet1/1/7: down
+TenGigabitEthernet1/1/8: down
+
+Select number from which you would like to know the port utilisation (number or end): 10
+list index out of range
+
+Select number from which you would like to know the port utilisation (number or end): one
+Please type a number!
+
+Select number from which you would like to know the port utilisation (number or end): end
+Thank you for using the application
+```
+
+### Exercise 4
 
 TBD
