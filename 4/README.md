@@ -8,7 +8,7 @@ While going through the reading material from DevNet learninglabs marked for thi
 
 
 **Additional reading material if you are interested in more APIs**
-- DevNet: [Cisco SD-WAN programmability](https://developer.cisco.com/learning/modules/sd-wan) --> learn about another Cisco solution, SD-WAN, and how their APIs work.
+- DevNet: [Cisco SD-WAN programmability](https://developer.cisco.com/learning/modules/sd-wan)
 - DevNet: [Cisco Meraki programmability](https://developer.cisco.com/learning/modules/getting-started-with-meraki)
 
 **Exercises**
