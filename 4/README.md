@@ -5,6 +5,7 @@ While going through the reading material from DevNet learninglabs marked for thi
 **Reading material:**
 - DevNet: [Introduction to Ansible](https://developer.cisco.com/learning/modules/sdx-ansible-intro)
 - DevNet: [Cisco DNA Center API overview](https://developer.cisco.com/learning/devnet-express/dnav4-track/dnav4-intro-dnac/dne-dnac-api-overview/step/1)
+- Documentation: [Requests Python Library](https://requests.readthedocs.io/en/master/) --> check Quickstart to understand better what you can do with the library. Check also API reference for more detailed information, so that you know where to go if you need to learn something specific of this library.
 
 
 **Additional reading material if you are interested in more APIs**
