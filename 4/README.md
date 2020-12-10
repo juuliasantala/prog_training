@@ -191,7 +191,7 @@ BASE_URI = "api.meraki.com/api/v1"
 ```
 
 Check Meraki [API documentation](https://developer.cisco.com/meraki/api-v1/v).
-Meraki docmentation is a swagger, meaning that you can try out the API calls directly in the documentation. Note that the sandbox API key is already as a default key in the documentation, so you can try to run the API calls against the sandbox.
+Meraki documentation is a swagger, meaning that you can try out the API calls directly in the documentation. Note that the sandbox API key is already as a default key in the documentation, so you can try to run the API calls against the sandbox.
 
 Under General section you can find an API to get all the devices in an organization. You will notice that the URI requires the ID of the organization: in the documentation you can also find an API to get that ID. On the right side of the documentation you will also be able to see what kind of headers you need (pay attention to especially what name Meraki uses for the API key.)
 
