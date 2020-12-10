@@ -22,14 +22,14 @@ Remember to activate the virtual environment, and never work outside of it. You 
 
 Mac:
 ```
-$ python3 -m venv session3_exercises
-$ source session3_exercises/bin/activate
+$ python3 -m venv session4_exercises
+$ source session4_exercises/bin/activate
 
 ```
 Windows:
 ```
-$ py -3 -m venv session3_exercises
-$ source session3_exercises/Scripts/activate
+$ py -3 -m venv session4_exercises
+$ source session4_exercises/Scripts/activate
 
 ```
 
