@@ -3,7 +3,13 @@
 While going through the reading material from DevNet learninglabs marked for this session, try things out in the interactive python shell in terminal! Try out what happens when you change values. Then practice with the following exercises. For the practice exercises, try to solve those by yourself before the Q&A. The solution files will be added here after we have covered them in the Q&A session. Remember, the solutions are just examples on how you could solve the exercises, there are different ways to do things!
 
 **Reading material:**
+- DevNet: [Introduction to Ansible](https://developer.cisco.com/learning/modules/sdx-ansible-intro)
 - DevNet: [Cisco DNA Center API overview](https://developer.cisco.com/learning/devnet-express/dnav4-track/dnav4-intro-dnac/dne-dnac-api-overview/step/1)
+
+
+**Additional reading material if you are interested in more APIs**
+- DevNet: [Cisco SD-WAN programmability](https://developer.cisco.com/learning/modules/sd-wan) --> learn about another Cisco solution, SD-WAN, and how their APIs work.
+- DevNet: [Cisco Meraki programmability](https://developer.cisco.com/learning/modules/getting-started-with-meraki)
 
 **Exercises**
 - [Exercise 1](#exercise-1)
@@ -109,6 +115,8 @@ Family Switches and Hubs device with hostname cs3850.abc.inc
 
 Continue working with DNA Center APIs. We have been successful in getting all of the network devices in the previous exercise. Now utilise this information, and get all the interfaces of the device that the user selects!
 
+How can you filter the list of interfaces and print out only the physical interfaces? Study the JSON to see what key holds the value that can be used to define this.
+
 Check the [DNA Center API documentation](https://developer.cisco.com/docs/dna-center/api/1-3-3-x/) to find the correct API to use for getting interface info by device id.
 
 **Example output:**
@@ -173,4 +181,54 @@ Thank you for using the application
 
 ### Exercise 4
 
-TBD
+Try out Cisco Meraki APIs. You can find from DevNet Sandboxes an always-on Meraki Sandbox if you don't have access to your own Meraki environment.
+To use Meraki APIs, you need an API key. Compared to DNA Center, Meraki is a cloud service, therefor we don't have IP address or domain name for our own Meraki. Instead of that, use the Meraki base URI in your API calls.
+Sandbox credentials:
+```Python
+API_KEY = "6bec40cf957de430a6f1f2baa056b99a4fac9ea0"
+BASE_URI = "api.meraki.com/api/v1"
+```
+
+Check Meraki [API documentation](https://developer.cisco.com/meraki/api-v1/v).
+Meraki docmentation is a swagger, meaning that you can try out the API calls directly in the documentation. Note that the sandbox API key is already as a default key in the documentation, so you can try to run the API calls against the sandbox.
+
+Under General section you can find an API to get all the devices in an organization. You will notice that the URI requires the ID of the organization: in the documentation you can also find an API to get that ID. On the right side of the documentation you will also be able to see what kind of headers you need (pay attention to especially what name Meraki uses for the API key.)
+
+When getting the organizations, you will get all of those in the Sandbox lab. A good organization for this exercise is named "DevNet Sandbox", I recommend you to define in your script that it will find the ID of this organization to be used in the API call that fetches the devices.
+
+**Example output:**
+```
+$ python exercise4.py
+Devices in DevNet Sandbox:
+Model: MR84, Serial: Q2EK-S3AA-BXFW
+Model: MR84, Serial: Q2EK-SARE-UUBY
+Model: MV12WE, Serial: Q2FV-4QSY-KBF6
+Model: MV12WE, Serial: Q2FV-TG7N-MF4E
+Model: MV12WE, Serial: Q2FV-W72R-U7WX
+Model: MS225-24P, Serial: Q2GW-2CA5-RW6A
+Model: MS225-24P, Serial: Q2GW-2CPC-JCYZ
+Model: MS225-24P, Serial: Q2GW-2WW9-LLZC
+Model: MS220-8P, Serial: Q2HP-AJ22-UG72
+Model: MS220-8P, Serial: Q2HP-F5K5-R88R
+Model: MS220-8P, Serial: Q2HP-Q9S8-BVHB
+Model: MS220-8P, Serial: Q2HP-TQPZ-M5LP
+Model: MS220-8P, Serial: Q2HP-WH5E-MK7H
+Model: MR32, Serial: Q2JD-CAF3-Y6G2
+Model: MR32, Serial: Q2JD-N9K5-3QRB
+Model: MR53, Serial: Q2MD-9PJD-E9L7
+Model: MR53, Serial: Q2MD-BHHS-5FDL
+Model: MR53, Serial: Q2MD-C3CG-4DBC
+Model: MR53, Serial: Q2MD-MFNY-6L6H
+Model: MR53, Serial: Q2MD-Y5QK-LAK2
+Model: MX64W, Serial: Q2MN-R73U-YZ8M
+Model: MR33, Serial: Q2PD-2S5P-WFC5
+Model: MX84, Serial: Q2PN-JRAG-STZY
+Model: MX84, Serial: Q2PN-PSMX-KDDC
+Model: MX84, Serial: Q2PN-WWNM-JRAS
+Model: MX65, Serial: Q2QN-9J8L-SLPD
+Model: MX65, Serial: Q2QN-WPR6-UJPL
+Model: MX65, Serial: Q2QN-WS5Y-DN8E
+Model: MX65, Serial: Q2QN-XPL2-2MPN
+Model: MR30H, Serial: Q2RD-4YLL-CSUN
+Model: MR30H, Serial: Q2RD-4ZSU-DLC6
+```
